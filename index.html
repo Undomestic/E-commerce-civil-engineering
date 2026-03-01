@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dormount India Clone - Architectural Hardware</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Spinner -->
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">DORMOUNT<span>INDIA</span></a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#" id="lang-toggle"><i class="fas fa-globe"></i> EN</a>
+                        <div class="lang-menu">
+                            <span class="lang-category">Global</span>
+                            <a href="#" data-lang="en">🇺🇸 English</a>
+                            <a href="#" data-lang="es">🇪🇸 Spanish</a>
+                            <a href="#" data-lang="fr">🇫🇷 French</a>
+                            <a href="#" data-lang="de">🇩🇪 German</a>
+                            <a href="#" data-lang="zh-CN">🇨🇳 Chinese</a>
+                            <a href="#" data-lang="ja">🇯🇵 Japanese</a>
+                            <a href="#" data-lang="ar">🇸🇦 Arabic</a>
+                            <a href="#" data-lang="ru">🇷🇺 Russian</a>
+                            
+                            <span class="lang-category">Indian</span>
+                            <a href="#" data-lang="hi">🇮🇳 Hindi</a>
+                            <a href="#" data-lang="bn">🇮🇳 Bengali</a>
+                            <a href="#" data-lang="te">🇮🇳 Telugu</a>
+                            <a href="#" data-lang="mr">🇮🇳 Marathi</a>
+                            <a href="#" data-lang="ta">🇮🇳 Tamil</a>
+                            <a href="#" data-lang="ur">🇮🇳 Urdu</a>
+                            <a href="#" data-lang="gu">🇮🇳 Gujarati</a>
+                            <a href="#" data-lang="kn">🇮🇳 Kannada</a>
+                            <a href="#" data-lang="ml">🇮🇳 Malayalam</a>
+                            <a href="#" data-lang="pa">🇮🇳 Punjabi</a>
+                        </div>
+                    </li>
+                    <li class="search-li">
+                        <div class="search-box">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="searchInput" placeholder="Search supplies...">
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </li>
+                    <li class="theme-switch">
+                        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li><a href="#contact" class="btn btn-primary" style="padding: 8px 20px; color: #0B2E4F;">Request Quote</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Precision Engineered Door Control Solutions</h1>
+                <p>Setting the global standard for safety, durability, and design in architectural hardware. Trusted by leading architects and builders across India.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-outline">Technical Assistance</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-slider">
+                    <div class="slide active">
+                        <img src="blank-white.jpg" alt="Industrial Door System" fetchpriority="high" loading="eager">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/600x400?text=Automatic+Sliding+Doors" alt="Automatic Sliding Doors" loading="lazy">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/600x400?text=Premium+Glass+Fittings" alt="Premium Glass Fittings" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h4 class="sub-heading">About Dormount</h4>
+                    <h2 class="section-title text-left">Engineering Excellence for Modern Spaces</h2>
+                    <p>Dormount India is a premier provider of architectural hardware and automatic door systems. We bridge the gap between functionality and aesthetics, delivering solutions that architects trust and builders rely on.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ISO-Compliant Manufacturing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>High-Cycle Performance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Nationwide Distribution</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Dedicated Technical Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/MvMRlRUe6EQ?si=MAx_iYqLgUWXrDJp" title="Dormount India Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Distributors</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50k+</h3>
+                    <p>Installations</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Quality Tested</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section bg-light">
+        <div class="container">
+            <h4 class="sub-heading text-center">Civil Engineering Supplies</h4>
+            <h2 class="section-title">Essential Materials & Equipment</h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="card-header">
+                        <h3>Cement Bags</h3>
+                        <span class="category-tag">Materials</span>
+                    </div>
+                    <div class="card-body">
+                        <p>High-strength Portland cement suitable for all general construction purposes.</p>
+                        <ul class="feature-list">
+                            <li>Grade 53 or 43 available</li>
+                            <li>Quick setting formulation</li>
+                            <li>Widely used for concreting and mortar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <h3>Steel Reinforcement Bars</h3>
+                        <span class="category-tag">Materials</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Deformed steel bars for RCC structures, available in various diameters.</p>
+                        <ul class="feature-list">
+                            <li>Fe415 and Fe500 grades</li>
+                            <li>Anti-corrosive coating optional</li>
+                            <li>Supplied in cut-to-length or coils</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <h3>Concrete Mixer</h3>
+                        <span class="category-tag">Machinery</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Portable electric concrete mixer ideal for small to medium projects.</p>
+                        <ul class="feature-list">
+                            <li>Capacity 200–400 litres</li>
+                            <li>Robust steel drum</li>
+                            <li>Easy maneuverability with wheels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- product-grid -->
+        </div> <!-- container -->
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Certified for Performance. Trusted for Reliability.</h2>
+            <div class="cert-grid">
+                <div class="cert-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>ISO 9001:2015</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-check-double"></i>
+                    <span>CE Certified</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-fire-alt"></i>
+                    <span>BS EN 1634</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-industry"></i>
+                    <span>MSME Registered</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Dormount</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Certified Reliability</h3>
+                    <p>Our products meet international safety and durability standards.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated after-sales support team for maintenance and queries.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-history"></i>
+                    <h3>20+ Years Experience</h3>
+                    <p>Decades of expertise in the architectural hardware industry.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Precision Engineering</h3>
+                    <p>State-of-the-art manufacturing ensuring zero-defect products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section bg-light">
+        <div class="container">
+            <h4 class="sub-heading text-center">Trusted By</h4>
+            <div class="partners-wrapper">
+                <img src="https://via.placeholder.com/150x60?text=Partner+1" alt="Partner" loading="lazy">
+                <img src="https://via.placeholder.com/150x60?text=Partner+2" alt="Partner" loading="lazy">
+                <img src="https://via.placeholder.com/150x60?text=Partner+3" alt="Partner" loading="lazy">
+                <img src="https://via.placeholder.com/150x60?text=Partner+4" alt="Partner" loading="lazy">
+                <img src="https://via.placeholder.com/150x60?text=Partner+5" alt="Partner" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p class="contact-desc">Reach out to us for quotes, technical specifications, or dealership enquiries.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Head Office</strong>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 98765XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>email.example.com</p>
+                        </div>
+                    </div>
+                    <!-- Google Map Embed -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1698765432100!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <form class="contact-form" action="contact.php" method="POST">
+                    <h3>Request a Quote</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Enquiry Button -->
+    <a href="#contact" class="sticky-enquiry-btn"><i class="fas fa-comment-dots"></i> Enquiry</a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo footer-logo">Co.<span>country name</span></a>
+                    <p>Precision engineered hardware for the modern world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Cement & Aggregates</a></li>
+                        <li><a href="#">Reinforcement Steel</a></li>
+                        <li><a href="#">Construction Machinery</a></li>
+                        <li><a href="#">Safety Gear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Address</p>
+                    <p>phone no.</p>
+                    <p>email.example.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; you CO. name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Translate Script -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
